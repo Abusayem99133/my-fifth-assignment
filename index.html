@@ -176,17 +176,17 @@
                     <!-- seat plan  -->
                     <div class="lg:grid grid-cols-5 gap-4">
                         <!-- A series  -->
-                        <div class=" p-4  text-center w-32 rounded-xl">A</div>
-                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">A1</div>
-                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">A2</div>
-                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">A3</div>
-                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">A4</div>
+                        <div class=" p-4  text-center w-32 rounded-xl"><h1>A</h1></div>
+                        <div id="1" class="add-btn bg-[#eaebec] p-4  text-center w-32 rounded-xl">A1</div>
+                        <div  id="2" class="add-btn bg-[#eaebec] p-4  text-center w-32 rounded-xl">A2</div>
+                        <div  id="3" class="add-btn bg-[#eaebec] p-4 text-center w-32 rounded-xl">A3</div>
+                        <div id="4" class="add-btn bg-[#eaebec] p-4 text-center w-32 rounded-xl">A4</div>
                         <!-- B series  -->
                         <div class=" p-4  text-center w-32 rounded-xl ">B</div>
-                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl ">B1</div>
-                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B2</div>
-                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B3</div>
-                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B4</div>
+                        <div id="B1" class="bg-[#eaebec] p-4  text-center w-32 rounded-xl ">B1</div>
+                        <div id="B2" class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B2</div>
+                        <div id="B3" class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B3</div>
+                        <div id="B4" class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B4</div>
                         <!-- C series  -->
                         <div class=" p-4  text-center w-32 rounded-xl">C</div>
                         <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">C1</div>
@@ -241,29 +241,53 @@
                 <!-- site area  -->
                 <div class="mt-28 ">
                     <!-- main div i mean parent div  -->
-                   <div class="bg-[#f7f8f8]">
+                   <div class="bg-[#f7f8f8] p-4">
                     <div>
                         <h1>Selected Your Seat</h1>
                     </div>
                     <!-- dynamic area  -->
                     <div class="flex justify-between gap-12 mt-8">
                         <div class="">
-                            <h4>Seat <span id="" class="bg-[#1dd100] p-1 rounded-lg">2</span></h4>
-                            <input class="p-4" type="text" name="" id="" placeholder="A2">
-                            <br>
-                           <input class="p-4" type="text" placeholder="A4">
-                        
+                            
+                           
                         </div>
-                        <div class="">
-                            <h3>Class</h3>
-                            <h4 class="p-4">Economy</h4>
-                            <h4 class="p-4">Economy</h4>
-                        </div>
-                        <div>
-                            <h3>Price</h3>
-                            <h4 class="p-4">550</h4>
-                            <h4 class="p-4">550</h4>
-                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="table">
+                              <!-- head -->
+                              <thead>
+                                <tr>
+                                  <th></th>
+                                  <th>Seat <span id="add-seat" class="bg-[#1dd100] w-full px-4 rounded-lg">2</span>
+                                    <span class="" id="Selected-input"></span></th>
+                                  <th>Class</th>
+                                  <th>Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <!-- row 1 -->
+                                <tr>
+                                  <th></th>
+                                  <td></td>
+                                  <td>Economy</td>
+                                  <td>550</td>
+                                </tr>
+                                <!-- row 2 -->
+                                <tr>
+                                  <th></th>
+                                  <td></td>
+                                  <td>Economy</td>
+                                  <td>550</td>
+                                </tr>
+                                <!-- row 3 -->
+                                <tr>
+                                  <th></th>
+                                  <td></td>
+                                  <td>Economy</td>
+                                  <td>550</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
                         <div>
                         </div>
                         
@@ -323,6 +347,7 @@
     <footer>
 
     </footer>
+    <script src="/utility/utility.js"></script>
     <script src="/scripts.js"></script>
 </body>
 
