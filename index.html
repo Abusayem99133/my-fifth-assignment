@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisy ui link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <title>Bus Ticket Counter </title>
+
+    <style>
+        font-family {
+            font-family: "Raleway", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="p-10">
+    <header>
+        <!-- banner section -->
+        <div class=" flex flex-1 justify-between p-5">
+            <div>
+                <h1 class=" text-4xl font-extrabold">Bus-Ticket</h1>
+            </div>
+            <div class="lg:flex gap-10 pt-3">
+                <p>Home</p>
+                <p>About</p>
+                <p>destination</p>
+                <p>search</p>
+            </div>
+            <div class="lg: text-[20px] font-semibold btn bg-[#ddf5e6] border-[1px] border-[#a0e895]">
+                Bus
+                <img src="./images/bus-icon.png" alt="">
+            </div>
+        </div>
+        <!-- head site  -->
+        <div class=" rounded-3xl hero min-h-screen max-w-full" style=" background-image: url(images/banner.png);">
+            <!-- <div class="hero-overlay"></div> -->
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md   max-h-full">
+                    <h1 class="mb-5 text-4xl font-extrabold">End-to-End Travel with <br>
+                        <span class="text-[#1dd100]">P Paribahan</span>
+                    </h1>
+                    <p class="mb-5">In Saint Martin, Bangladesh, the slogan "Saint Martin, Tranquil Haven" encapsulates
+                        the island's serene charm..</p>
+                    <a onclick="(ph-paribahan)" href=""><button id="" class="btn btn-primary bg-[#1dd100] text-black font-semibold">Buy tickets</button></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- best offer area  -->
+        <section class="mt-28">
+            <h2 class="text-3xl font-bold text-center mb-12">Best offers for you</h2>
+            
+            <!-- 15% discount  -->
+            <div class="lg:flex justify-center bg-[#] gap-8  gap-y-2text-center ">
+
+                <div class="flex">
+                    <div class="rounded-r-2xl bg-[#ffbf0f] p-12 ">
+                        <h2 class="text-4xl font-black">15% OFF</h2>
+                        <h5 class="text-[20px] font-semibold">on your next purchase</h5>
+                        <span class="text-[18px] font-medium">use by February</span>
+
+                    </div>
+
+                    <div class="rounded-l-xl bg-[#ffbf0f] p-12">
+                        <h2 class="text-[32px] font-black">NEW15</h2>
+                        <p class="20px font-medium">Coupon Code</p>
+                    </div>
+                </div>
+
+                <!-- 20% discount -->
+                <div class="flex">
+                    <div class="bg-[#f78c9c] p-12 rounded-r-3xl">
+                        <h2 class="text-3xl font-black">20% OFF</h2>
+                        <h5 class="text-[20px] font-semibold">on your next purchase</h5>
+                        <span class="text-[18px] font-medium">use by February</span>
+                    </div>
+                    <div class="bg-[#f78c9c] p-12 rounded-l-3xl">
+                        <h2 class=" text-[32px] font-bold">Couple 20</h2>
+                        <p class="text-[20px] font-medium">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="text-center mt-16">
+            <button class="btn btn-primary bg-[#ffff] border-[1px] border-[#c6f3bf] text-[#56dd40]">See All
+                Offers</button>
+        </div>
+
+        <section id="ph-paribahan" class=" mt-28 border-t-[2px] border-t-[#4ee48b] rounded-3xl">
+            <div class="mt-28 text-center">
+                <!-- ph paribahan area  -->
+                <h1 class="text-[40px] font-bold">P.H Paribahan</h1>
+                <p class="text-[18px] text-[#c8cacc]">We have an excellent system of taking service based on preference,
+                    as there is ticketing service for multiple routes via different categories of buses.</p>
+            </div>
+            <!-- time destination area  -->
+            <div class="lg:flex justify-between">
+
+                <div class="bg-[#f7f8f8]  rounded-3xl">
+                    <div class="flex justify-between">
+                        <div class="flex justify-between ">
+                            <img class="p-4" src="./images/bus-logo.png" alt="">
+                            <div>
+                                <h3 class="pt-3 text-3xl font-semibold">Greenline Paribahan</h3>
+
+                                <p class="text-[#8c8e93]">Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4">
+                            <button class=" ml- btn text-[#7de46c] bg-[#ddf8d9]"><img src="./images/seat-green.png"
+                                    alt="">40 Seats</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-between">
+                        <h4>Route</h4>
+                        <h4>Dhaka-Sylhet</h4>
+
+                    </div>
+                    <div class="flex justify-between mt-10 border-dashed">
+                        <h4>Departure Time</h4>
+                        <h4>9:00 PM</h4>
+                    </div>
+                    <div class="flex justify-between mt-10 p-8 ">
+                        <h4 class=" bg-[#eaebec] py-2 px-2 mr-5 rounded-md">Boarding Point-Laxmipur</h4>
+                        <h4 class="bg-[#eaebec] mr-5 py-2 px-2 rounded-md">Dropping Point-Bogura</h4>
+                        <h4 class="bg-[#eaebec] py-2
+                            px-2
+                            rounded-md">Est. Time-11 Hour</h4>
+                    </div>
+                </div>
+                <div class="">
+                    <img src="/images/fare.png" alt="">
+                    <h2 class="font-bold text-2xl">550 Taka</h2>
+                    <p>Per Seat</p>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <!-- main div  -->
+            <div class="lg:flex justify-between">
+                <!-- set plan  -->
+                <div>
+                    <!-- set plan heading  -->
+                    <div class="mt-28">
+                        <h3>
+                            Select Your Seat
+                        </h3>
+
+                    </div>
+                
+                    <div class="mt-24 flex justify-between">
+                        <div class=" gap-1">
+                            <img src="./images/seat-gray.png" alt="">
+                            <h3>Available</h3>
+
+                        </div>
+                        <div class="">
+                            <button id="" class="btn text-[#7de46c] bg-white "><img src="./images/seat-green-filled.png" alt="">
+                                Selected</button>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-between pt-8">
+                        <h2></h2>
+                        <img class=" lg:w-[15%] bg-[#eaebec] py-6 px-8 m-4  text-center rounded-xl"
+                            src="./images/steearing.png" alt="">
+                    </div>
+                    <!-- seat plan  -->
+                    <div class="lg:grid grid-cols-5 gap-4">
+                        <!-- A series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">A</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">A1</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">A2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">A3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">A4</div>
+                        <!-- B series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl ">B</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl ">B1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">B4</div>
+                        <!-- C series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">C</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">C1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">C2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">C3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">C4</div>
+                        <!-- D series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">D</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">D1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">D2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">D3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">D4</div>
+                        <!-- E series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">E</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">E1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">E2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">E3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">E4</div>
+                        <!-- F series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">F</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">f1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">F2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">F3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">F4</div>
+                        <!-- G series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">G</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">G1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">G2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">G3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">G4</div>
+                        <!-- H series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">H</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">H1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">H2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">H3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">H4</div>
+                        <!-- I series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">I</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">I1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">I2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">I3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">I4</div>
+                        <!-- H series  -->
+                        <div class=" p-4  text-center w-32 rounded-xl">J</div>
+                        <div class="bg-[#eaebec] p-4  text-center w-32 rounded-xl">J1</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">J2</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">J3</div>
+                        <div class="bg-[#eaebec] p-4 text-center w-32 rounded-xl">J4</div>
+
+                    </div>
+                </div>
+                <!-- site area  -->
+                <div class="mt-28 ">
+                    <!-- main div i mean parent div  -->
+                   <div class="bg-[#f7f8f8]">
+                    <div>
+                        <h1>Selected Your Seat</h1>
+                    </div>
+                    <!-- dynamic area  -->
+                    <div class="flex justify-between gap-12 mt-8">
+                        <div class="">
+                            <h4>Seat <span id="" class="bg-[#1dd100] p-1 rounded-lg">2</span></h4>
+                            <input class="p-4" type="text" name="" id="" placeholder="A2">
+                            <br>
+                           <input class="p-4" type="text" placeholder="A4">
+                        
+                        </div>
+                        <div class="">
+                            <h3>Class</h3>
+                            <h4 class="p-4">Economy</h4>
+                            <h4 class="p-4">Economy</h4>
+                        </div>
+                        <div>
+                            <h3>Price</h3>
+                            <h4 class="p-4">550</h4>
+                            <h4 class="p-4">550</h4>
+                        </div>
+                        <div>
+                        </div>
+                        
+                    </div>
+                    <hr>
+                    <div class="flex justify-between">
+                        <h4>Total Price</h4>
+                        <button class="btn mr-8">BDT<span id="">1100</span></button>
+
+                    </div>
+                    
+                    <!-- coupon code site  -->
+                   
+                        <div class="flex justify-between mt-4">
+                            <input type="text" name="" id="" placeholder="Have any coupon?">
+                            <button id="" class="btn btn-primary mr-8 bg-[#1dd100] text-white">Applay</button>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <h4>Grand Total</h4>
+                        <button class="btn mr-8">BDT<span id="">1100</span></button>
+    
+                      
+                    </div>
+                   </div>
+                    <!-- form section area  -->
+                    <div>
+                        <h4 class="font-bold mb-4 mt-6">Passenger Name*</h4>
+                        <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Enter your name" />
+                            
+                          </label>
+
+                          <h4 class="font-bold mt-4 mb-4">Phone Number*</h4>
+                          <label class="input input-bordered flex items-center gap-2">
+                            <input type="text" class="grow" placeholder="Enter you phone number" />
+                          </label>
+                          <h4 class="font-bold mt-4 mb-4">Email ID</h4>
+                          <label class="input input-bordered flex items-center gap-2">
+                           
+                            <input class="" type="email" name="" id="" placeholder="Enter your email id">
+                          </label>
+                         
+                    </div>
+                    <div class="mt-6">
+                        <button class="btn btn-primary bg-[#1dd100] w-full text-white text-[20px] font-extrabold">Next</button>
+                    </div>
+                </div>
+                
+                </div>
+
+                <!-- div close for site bar  -->
+        </section>
+        <section>
+            
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="/scripts.js"></script>
+</body>
+
+</html>
