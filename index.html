@@ -17,8 +17,8 @@
   </style>
 </head>
 
-<body class="p-10">
-  <header>
+<body class="p-10 ">
+  <header class="">
     <!-- banner section -->
     <div class="flex flex-1 justify-between p-5">
       <div>
@@ -48,8 +48,7 @@
             In Saint Martin, Bangladesh, the slogan "Saint Martin, Tranquil
             Haven" encapsulates the island's serene charm..
           </p>
-          <a  href="#target"><button id=""
-              class="btn btn-primary bg-[#1dd100] text-black font-semibold cursor-pointer">
+          <a href="#target"><button id="" class="btn btn-primary bg-[#1dd100] text-black font-semibold cursor-pointer">
               Buy tickets
             </button></a>
         </div>
@@ -57,8 +56,9 @@
     </div>
   </header>
   <main>
-    <!-- best offer area  -->
-    <section class="mt-28">
+   <section class="">
+     <!-- best offer area  -->
+     <section class="mt-28">
       <h2 class="text-3xl font-bold text-center mb-12">
         Best offers for you
       </h2>
@@ -92,13 +92,27 @@
         </div>
       </div>
     </section>
-    <div class="text-center mt-16">
+    <div class=" text-center mt-16">
       <button class="btn btn-primary bg-[#ffff] border-[1px] border-[#c6f3bf] text-[#56dd40]">
         See All Offers
       </button>
     </div>
+    <!-- hide section pop up  -->
+    <section id="congratulation-btn" class="hidden">
+      
+      <div class="rounded-2xl border-2 border-gray-600 items-center justify-center text-center w-full p-16 ">
+        <img class="mx-auto" src="/images/success.png" alt="">
+        <h4 class="text-2xl font-semibold mt-4">SUCCESS</h4>
+        <p class="text-[#7b7b7b] font-medium text-[20px] pt-8">Thank you for Booking Out bus Seats. <br> We are working
+          hard to find the best service and deals for you. </p>
+        <p class="text-[#cccccc] text-[20px]">Shortly you will find a confirmation in your email.</p>
+        <button class="rounded-3xl text-white btn w-60 mt-4 bg-[#27ae60] font-semibold text-[20px]">Continue</button>
+      </div>
+    
 
-    <section  class="mt-28 border-t-[2px] border-t-[#4ee48b] rounded-3xl">
+  </section>
+
+    <section class=" mt-28 border-t-[2px] border-t-[#4ee48b] rounded-3xl">
       <div class="mt-28 text-center">
         <!-- ph paribahan area  -->
         <h1 class="text-[40px] font-bold">P.H Paribahan</h1>
@@ -157,7 +171,7 @@
         </div>
       </div>
     </section>
-    <section id="target">
+    <section id="target" class="">
       <!-- main div  -->
       <div class="lg:flex justify-between">
         <!-- set plan  -->
@@ -353,18 +367,58 @@
             </label>
           </div>
           <div class="mt-6">
-            <button class="btn btn-primary bg-[#1dd100] w-full text-white text-[20px] font-extrabold">
-              Next
-            </button>
+            
+              <button onclick="nextBtnCongratulation()" class="btn btn-primary bg-[#1dd100] w-full text-white text-[20px] font-extrabold">
+                Next
+              </button>
+            
           </div>
         </div>
       </div>
 
       <!-- div close for site bar  -->
-    </section>
-    <section></section>
+  
+   </section>
+    <!-- congratulation card  -->
+    
   </main>
-  <footer></footer>
+  <footer class=" mt-5 text-white p-10 bg-black">
+
+    <div class="flex justify-between">
+      <nav>
+        <h6 class="text-2xl font-extrabold">Bus-Tickets</h6>
+        <p>Bus-Tickets is a digital platform to make your daily commuting better.</p>
+
+      </nav>
+      <nav>
+        <h6 class="">Download our app</h6>
+        <div class="flex gap-2 border-2 p-2 items-center">
+          <img src="./images/playstore.png" alt="">
+          <h6 class="text-2xl font-bold">Google Play</h6>
+        </div>
+      </nav>
+    </div>
+    <hr class="border-dashed pb-8  mt-16">
+    <div class="flex justify-between p-8">
+      <nav>
+        <h6 class="text-gray-300">@all rights reserved,Bus-Ticket services limited.2024</h6>
+      </nav>
+      <div class="flex gap-4">
+        <nav>
+          <h6>Terms & condition
+
+          </h6>
+        </nav>
+        <nav>
+          <h6>Return & refund policy</h6>
+        </nav>
+        <nav>
+          <h6>Privacy policy</h6>
+        </nav>
+      </div>
+    </div>
+
+  </footer>
   <!-- <script src="/utility/utility.js"></script> -->
   <script src="/scripts.js"></script>
 </body>

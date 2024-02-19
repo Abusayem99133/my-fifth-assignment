@@ -1,14 +1,14 @@
 
 const seatsElement = document.getElementById("total-seats");
 const totalPriceElement = document.getElementById("total-prices");
-const grandTotalPriceElement = document.getElementById("grand-total");
+// const grandTotalPriceElement = document.getElementById("grand-total");
 const addSeatElement = document.getElementById("add-seat");
 const tableBody = document.getElementById("table-body");
 const buttons = document.querySelectorAll('.sit-button');
 
 
 
-const totalSeats = 40;
+const totalSeats =4;
 
 let count = 0;
 const perSeatPrice = 550;
@@ -17,7 +17,7 @@ let totalPrice = 0;
 
 seatsElement.innerText = totalSeats;
 totalPriceElement.innerText = totalPrice;
-grandTotalPriceElement.innerText = totalPrice;
+// grandTotalPriceElement.innerText = totalPrice;
 addSeatElement.innerText = count;
 
 
@@ -52,7 +52,19 @@ function calculateSeatfunction (added) {
         seatsElement.innerText = calculateSeatfunction(count);
         addSeatElement.innerText = count;
         totalPriceElement.innerText = totalPrice;
-        grandTotalPriceElement.innerText = totalPrice;
+        // grandTotalPriceElement.innerText = totalPrice;
         button.classList.replace('bg-[#eaebec]', 'bg-[#1dd100]');
     })
+}
+
+
+// next button 
+
+function nextBtnCongratulation(){
+    showElementById("congratulation-btn")
+}
+
+function showElementById(elementById){
+    const element = document.getElementById(elementById);
+    element.classList.remove('hidden')
 }
