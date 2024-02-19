@@ -61,7 +61,8 @@ function calculateSeatfunction (added) {
 // next button 
 
 function nextBtnCongratulation(){
-    showElementById("congratulation-btn")
+    showElementById("congratulation-btn") 
+    window.location.href = '#pop-up';
 }
 
 function showElementById(elementById){
